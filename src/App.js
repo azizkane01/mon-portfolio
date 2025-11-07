@@ -222,13 +222,15 @@ export default function Portfolio() {
             <div className="mt-12 bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-blue-500/20">
               <h4 className="text-2xl font-bold mb-4 flex items-center gap-3">
                 <Award className="text-blue-400" />
-                Certifications
+                Certifications and Badge
               </h4>
               <ul className="space-y-2 text-gray-300" >
-                <li><a target="_blank" rel="noopener noreferrer"
-                     className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors" href='https://www.etsglobal.org/fr/en/digital-score-report/8625B1CFBBB0C8DC84D4A78BE09B37F18BB10DA578D9ECCCFCADE35BC00648F1OFFOUXpydmM0bGJybWEybGVNQ2dqT3ZwTm5VeFFRQk5MMCtNQ1Zlb1IvcXRTdEdh?utm_campaign=sharing_dsr&utm_medium=qr-code&utm_source=dsr'>• Test TOEIC <ExternalLink className="w-4 h-4" /></a></li>
-                <li><a></a>• Data Communication and Network</li>
-                <li><a></a>• CS50's Introduction to Programming with Python</li>
+                <li><a target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors" href='https://www.etsglobal.org/fr/en/digital-score-report/8625B1CFBBB0C8DC84D4A78BE09B37F18BB10DA578D9ECCCFCADE35BC00648F1OFFOUXpydmM0bGJybWEybGVNQ2dqT3ZwTm5VeFFRQk5MMCtNQ1Zlb1IvcXRTdEdh?utm_campaign=sharing_dsr&utm_medium=qr-code&utm_source=dsr'>• TOEIC TEST <ExternalLink className="w-4 h-4" /></a></li>
+                <li><a target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors" href='https://academy.hackthebox.com/achievement/badge/a0c3e8bc-fb83-11ef-864f-bea50ffe6cb4'>• LEARNIN PENTESTING <ExternalLink className="w-4 h-4" /></a></li>
+                <li><a target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors" href='https://academy.hackthebox.com/achievement/badge/7d31f3bc-8686-11f0-9254-bea50ffe6cb4'>• Web Proxies for Web Explotation <ExternalLink className="w-4 h-4" /></a></li>
+                <li><a target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors" href='https://academy.hackthebox.com/achievement/badge/b8352795-8b50-11f0-9254-bea50ffe6cb4'>• Information gathering (OSINT and Active Reconnaissance) <ExternalLink className="w-4 h-4" /></a></li>
+                <li><a target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors" href='https://academy.hackthebox.com/achievement/badge/dd3517d2-15ff-11f0-864f-bea50ffe6cb4'>• Network Enumaration with Nmap <ExternalLink className="w-4 h-4" /></a></li>
+
               </ul>
             </div>
           </div>
