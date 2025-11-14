@@ -20,6 +20,12 @@ export default function Portfolio() {
       isInternal: false
     },
     {
+      title: "Mini Projet: Chiffrement DES",
+      description: "Implémentation du chiffrement DES (Data Encryption Standard) en Python, permettant de chiffrer et déchiffrer des fichiers en utilisant une clé secrète de 56 bits.\n Le projet inclut la gestion du padding, la conversion entre fichier et binaire, ainsi qu'une interface utilisateur simple pour faciliter l'utilisation.",
+      path: "/chiffrement-des",
+      isInternal: true
+    },
+    {
       title: "Mini Projet: Typing Game",
       description: "Création d'un jeu interactif permettant aux utilisateurs de tester et d'améliorer leur vitesse de frappe en temps réel. Le projet est développé en HTML, CSS et JavaScript, offrant une interface utilisateur simple et réactive.\n Il est déployé sur Vercel pour une accessibilité optimale.",
       path: "/typing-game",
