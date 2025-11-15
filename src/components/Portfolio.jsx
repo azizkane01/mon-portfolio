@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Github, Linkedin, Mail, ExternalLink, Code2, Briefcase, GraduationCap, Award } from 'lucide-react';
 
@@ -251,7 +251,7 @@ export default function Portfolio() {
               </h4>
               <ul className="space-y-2 text-gray-300" >
                 <li><a target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors" href='https://www.etsglobal.org/fr/en/digital-score-report/8625B1CFBBB0C8DC84D4A78BE09B37F18BB10DA578D9ECCCFCADE35BC00648F1OFFOUXpydmM0bGJybWEybGVNQ2dqT3ZwTm5VeFFRQk5MMCtNQ1Zlb1IvcXRTdEdh?utm_campaign=sharing_dsr&utm_medium=qr-code&utm_source=dsr'>• TOEIC TEST <ExternalLink className="w-4 h-4" /></a></li>
-                <li><a target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors" href='https://academy.hackthebox.com/achievement/badge/a0c3e8bc-fb83-11ef-864f-bea50ffe6cb4'>• LEARNIN PENTESTING <ExternalLink className="w-4 h-4" /></a></li>
+                <li><a target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors" href='https://academy.hackthebox.com/achievement/badge/a0c3e8bc-fb83-11ef-864f-bea50ffe6cb4'>• LEARNING PENTESTING <ExternalLink className="w-4 h-4" /></a></li>
                 <li><a target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors" href='https://academy.hackthebox.com/achievement/badge/7d31f3bc-8686-11f0-9254-bea50ffe6cb4'>• Web Proxies for Web Explotation <ExternalLink className="w-4 h-4" /></a></li>
                 <li><a target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors" href='https://academy.hackthebox.com/achievement/badge/b8352795-8b50-11f0-9254-bea50ffe6cb4'>• Information gathering (OSINT and Active Reconnaissance) <ExternalLink className="w-4 h-4" /></a></li>
                 <li><a target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors" href='https://academy.hackthebox.com/achievement/badge/dd3517d2-15ff-11f0-864f-bea50ffe6cb4'>• Network Enumaration with Nmap <ExternalLink className="w-4 h-4" /></a></li>
