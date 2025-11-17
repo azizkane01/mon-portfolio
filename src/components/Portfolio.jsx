@@ -406,6 +406,7 @@ export default function Portfolio() {
                 <li><a target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors" href='https://academy.hackthebox.com/achievement/badge/7d31f3bc-8686-11f0-9254-bea50ffe6cb4'>• Web Proxies for Web Explotation <ExternalLink className="w-4 h-4" /></a></li>
                 <li><a target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors" href='https://academy.hackthebox.com/achievement/badge/b8352795-8b50-11f0-9254-bea50ffe6cb4'>• Information gathering (OSINT and Active Reconnaissance) <ExternalLink className="w-4 h-4" /></a></li>
                 <li><a target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors" href='https://academy.hackthebox.com/achievement/badge/dd3517d2-15ff-11f0-864f-bea50ffe6cb4'>• Network Enumaration with Nmap <ExternalLink className="w-4 h-4" /></a></li>
+                <li><a target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors" href='https://academy.hackthebox.com/achievement/badge/a1865c84-c3fd-11f0-9254-bea50ffe6cb4'>•  Cross-Site Scripting (XSS) <ExternalLink className="w-4 h-4" /></a></li>
               </ul>
             </div>
           </div>
