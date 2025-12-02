@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Github, Linkedin, Mail, ExternalLink, Code2, Briefcase, GraduationCap, Award, Languages } from 'lucide-react';
+import { Github, Linkedin, Mail, ExternalLink, Code2, Briefcase, GraduationCap, Award, Languages, Menu, X } from 'lucide-react';
 
 export default function Portfolio() {
   const navigate = useNavigate();
   const [activeSection, setActiveSection] = useState('about');
   const [language, setLanguage] = useState('fr');
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const translations = {
     fr: {
@@ -212,9 +213,9 @@ export default function Portfolio() {
   ];
 
   const skills = {
-    [t.skills.languages]: ["Python", "C", "Java", "JavaScript", "PHP","Scala"],
+    [t.skills.languages]: ["Python", "C", "Java", "JavaScript", "PHP", "Scala"],
     [t.skills.web]: ["React", "HTML/CSS", "Node.js"],
-    [t.skills.tools]: ["Git/GitHub","VMware","Docker", "Nmap","Burp Suite","wireshark","Arduino IDE","etc"],
+    [t.skills.tools]: ["Git/GitHub", "VMware", "Docker", "Nmap", "Burp Suite", "wireshark", "Arduino IDE", "etc"],
     [t.skills.spokenLanguages]: t.spokenLangs
   };
 
@@ -227,14 +228,15 @@ export default function Portfolio() {
             <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
               knert01
             </h1>
-            <div className="flex gap-6 items-center">
+
+            {/* Desktop Navigation */}
+            <div className="hidden md:flex gap-6 items-center">
               {['about', 'projects', 'experience'].map((section) => (
                 <button
                   key={section}
                   onClick={() => setActiveSection(section)}
-                  className={`capitalize hover:text-blue-400 transition-colors ${
-                    activeSection === section ? 'text-blue-400 font-semibold' : 'text-gray-300'
-                  }`}
+                  className={`capitalize hover:text-blue-400 transition-colors ${activeSection === section ? 'text-blue-400 font-semibold' : 'text-gray-300'
+                    }`}
                 >
                   {t.nav[section]}
                 </button>
@@ -248,7 +250,46 @@ export default function Portfolio() {
                 <span className="text-sm font-medium">{language === 'fr' ? 'EN' : 'FR'}</span>
               </button>
             </div>
+
+            {/* Mobile Menu Button */}
+            <button
+              className="md:hidden text-gray-300 hover:text-blue-400"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              {isMenuOpen ? <X /> : <Menu />}
+            </button>
           </div>
+
+          {/* Mobile Navigation */}
+          {isMenuOpen && (
+            <div className="md:hidden mt-4 pb-4 border-t border-blue-500/20 animate-fadeIn">
+              <div className="flex flex-col gap-4 pt-4">
+                {['about', 'projects', 'experience'].map((section) => (
+                  <button
+                    key={section}
+                    onClick={() => {
+                      setActiveSection(section);
+                      setIsMenuOpen(false);
+                    }}
+                    className={`text-left capitalize hover:text-blue-400 transition-colors ${activeSection === section ? 'text-blue-400 font-semibold' : 'text-gray-300'
+                      }`}
+                  >
+                    {t.nav[section]}
+                  </button>
+                ))}
+                <button
+                  onClick={() => {
+                    setLanguage(language === 'fr' ? 'en' : 'fr');
+                    setIsMenuOpen(false);
+                  }}
+                  className="flex items-center gap-2 text-gray-300 hover:text-blue-400 w-fit"
+                >
+                  <Languages className="w-4 h-4" />
+                  <span className="text-sm font-medium">{language === 'fr' ? 'English' : 'Français'}</span>
+                </button>
+              </div>
+            </div>
+          )}
         </nav>
       </header>
 
@@ -269,16 +310,16 @@ export default function Portfolio() {
           </div>
 
           <div className="flex justify-center gap-4 mb-12">
-            <a href="https://github.com/azizkane01/" target="_blank" rel="noopener noreferrer" 
-               className="p-3 bg-slate-800 hover:bg-slate-700 rounded-lg transition-colors">
+            <a href="https://github.com/azizkane01/" target="_blank" rel="noopener noreferrer"
+              className="p-3 bg-slate-800 hover:bg-slate-700 rounded-lg transition-colors">
               <Github className="w-6 h-6" />
             </a>
             <a href="https://www.linkedin.com/in/abdou-aziz-kane-33423a355" target="_blank" rel="noopener noreferrer"
-               className="p-3 bg-slate-800 hover:bg-slate-700 rounded-lg transition-colors">
+              className="p-3 bg-slate-800 hover:bg-slate-700 rounded-lg transition-colors">
               <Linkedin className="w-6 h-6" />
             </a>
             <a href="mailto:kane.aziz@uam.edu.sn"
-               className="p-3 bg-slate-800 hover:bg-slate-700 rounded-lg transition-colors">
+              className="p-3 bg-slate-800 hover:bg-slate-700 rounded-lg transition-colors">
               <Mail className="w-6 h-6" />
             </a>
           </div>
@@ -353,9 +394,9 @@ export default function Portfolio() {
                 <div key={index} className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-blue-500/20 hover:border-blue-400/40 transition-all hover:transform hover:scale-105">
                   <h4 className="text-2xl font-bold mb-3">{project.title}</h4>
                   <p style={{ whiteSpace: "pre-line" }} className="text-gray-300 mb-4">{project.description}</p>
-                  
+
                   {project.isInternal ? (
-                    <button 
+                    <button
                       onClick={() => navigate(project.path)}
                       className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors bg-transparent border-none cursor-pointer text-base"
                     >
