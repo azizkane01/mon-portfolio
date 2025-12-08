@@ -225,10 +225,7 @@ export default function Portfolio() {
       <header className="fixed top-0 w-full bg-slate-900/80 backdrop-blur-md border-b border-blue-500/20 z-50">
         <nav className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-              knert01
-            </h1>
-
+            
             {/* Desktop Navigation */}
             <div className="hidden md:flex gap-6 items-center">
               {['about', 'projects', 'experience'].map((section) => (
