@@ -17,7 +17,7 @@ export default function Portfolio() {
       },
       hero: {
         role: 'Étudiant en Informatique',
-        description: 'Etudiant en ingénierie Informatique @ Polytech Diamniadio | Administrateur Réseau et Full Stack Dev , passionné par la cybersécurité et l\'IoT'
+        description: 'Etudiant en ingénierie Informatique @ Polytech Diamniadio | Administrateur Réseau et Full Stack Dev , passionné par l\'Intelligence Artificielle, la cybersécurité et l\'IoT'
       },
       about: {
         title: 'À propos',
@@ -89,7 +89,7 @@ export default function Portfolio() {
       },
       hero: {
         role: 'Computer Science Student',
-        description: 'Computer Engineering student @ Polytech Diamniadio | Network Administrator and Full Stack Dev, passionate about cybersecurity and IoT'
+        description: 'Computer Engineering student @ Polytech Diamniadio | Network Administrator and Full Stack Dev, passionate about Artificial Intelligence, cybersecurity and IoT'
       },
       about: {
         title: 'About',
