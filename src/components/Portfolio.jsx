@@ -5,7 +5,7 @@ import { Github, Linkedin, Mail, ExternalLink, Code2, Briefcase, GraduationCap, 
 export default function Portfolio() {
   const navigate = useNavigate();
   const [activeSection, setActiveSection] = useState('about');
-  const [language, setLanguage] = useState('fr');
+  const [language, setLanguage] = useState('en');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const translations = {
