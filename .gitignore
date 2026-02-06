@@ -23,4 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 audit_report.txt
+audit_report_new.txt
 npm_list.txt

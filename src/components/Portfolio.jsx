@@ -44,7 +44,7 @@ export default function Portfolio() {
       projects: {
         title: 'Projets',
         viewProject: 'Voir le projet',
-        viewDemo: 'Voir la démo',
+        viewDemo: 'Voir le projet',
         project1: {
           title: 'Création et Administration d\'un réseau et de ces services',
           description: 'Projet de configuration compléte d\'un réseau sécurisé pour l\'entreprise fictive SMARTTECH,comprenant DMZ,LAN,VPN,ToIP,authentification Wi-Fi via FreeRADIUS et FreeIPA.\n Mise en oeuvre dans GNS3 sous VMware(Ubuntu) avec conteneurs Docker:VPN IPsec,firewall nftables,logs auditd,authentification Kerberos/LDAP.'
@@ -60,6 +60,10 @@ export default function Portfolio() {
         project4: {
           title: 'Mini Projet: Typing Game',
           description: 'Création d\'un jeu interactif permettant aux utilisateurs de tester et d\'améliorer leur vitesse de frappe en temps réel. Le projet est développé en HTML, CSS et JavaScript, offrant une interface utilisateur simple et réactive.\n Il est déployé sur Vercel pour une accessibilité optimale.'
+        },
+        projectZeroTrust: {
+          title: 'Architecture Zero Trust & Micro-segmentation',
+          description: 'Mise en œuvre d\'une architecture réseau sécurisée de type Zero Trust, déployée dans un environnement virtualisé.\n L\'objectif est de sécuriser un SI contre les mouvements latéraux via le paradigme "Never Trust, Always Verify".\n Architecture basée sur une micro-segmentation stricte (VLANs dédiés) et un filtrage par pare-feu central.\n Technologies : pfSense, Wazuh, FreeIPA, PostgreSQL, GNS3.'
         }
       },
       experience: {
@@ -116,7 +120,7 @@ export default function Portfolio() {
       projects: {
         title: 'Projects',
         viewProject: 'View project',
-        viewDemo: 'View demo',
+        viewDemo: 'View project',
         project1: {
           title: 'Network Creation and Administration with its Services',
           description: 'Complete configuration project of a secure network for the fictional company SMARTTECH, including DMZ, LAN, VPN, VoIP, Wi-Fi authentication via FreeRADIUS and FreeIPA.\n Implementation in GNS3 under VMware(Ubuntu) with Docker containers: IPsec VPN, nftables firewall, auditd logs, Kerberos/LDAP authentication.'
@@ -132,6 +136,10 @@ export default function Portfolio() {
         project4: {
           title: 'Mini Project: Typing Game',
           description: 'Creation of an interactive game allowing users to test and improve their typing speed in real time. The project is developed in HTML, CSS and JavaScript, offering a simple and responsive user interface.\n It is deployed on Vercel for optimal accessibility.'
+        },
+        projectZeroTrust: {
+          title: 'Zero Trust Architecture & Micro-segmentation',
+          description: 'Implementation of a secure Zero Trust network architecture deployed in a virtualized environment.\n The goal is to secure an IS against lateral movement using the "Never Trust, Always Verify" paradigm.\n Architecture based on strict micro-segmentation (dedicated VLANs) and central firewall filtering.\n Technologies: pfSense, Wazuh, FreeIPA, PostgreSQL, GNS3.'
         }
       },
       experience: {
@@ -175,6 +183,12 @@ export default function Portfolio() {
       description: t.projects.project3.description,
       path: "/chiffrement-des",
       isInternal: true
+    },
+    {
+      title: t.projects.projectZeroTrust.title,
+      description: t.projects.projectZeroTrust.description,
+      demo: "https://github.com/azizkane01/architecture-zero-trust",
+      isInternal: false
     },
     {
       title: t.projects.project4.title,
