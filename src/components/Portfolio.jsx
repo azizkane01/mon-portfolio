@@ -80,6 +80,12 @@ export default function Portfolio() {
           role: 'Stagiaire Téchnicien Réseau',
           period: 'Août - Octobre 2025',
           description: 'Participation à la maintenance, à la configuration et à l\'installation de l\'infrastructure réseau, incluant le câblage, la mise en place des équipements actifs et le diagnostic des incidents de connectivité.'
+        },
+        exp3: {
+          company: 'Interprest-sn',
+          role: 'Stagiaire',
+          period: 'Février - Avril 2026',
+          description: 'Administration de serveurs, participation à l\'installation de réseaux et maintenance de logiciels d\'archivage.'
         }
       },
       footer: 'Tous droits réservés.',
@@ -156,6 +162,12 @@ export default function Portfolio() {
           role: 'Network Technician Intern',
           period: 'August - October 2025',
           description: 'Participation in the maintenance, configuration and installation of network infrastructure, including cabling, installation of active equipment and diagnosis of connectivity incidents.'
+        },
+        exp3: {
+          company: 'Interprest-sn',
+          role: 'Intern',
+          period: 'February - April 2026',
+          description: 'Server administration, participation in network installation, and maintenance of archiving software.'
         }
       },
       footer: 'All rights reserved.',
@@ -199,6 +211,12 @@ export default function Portfolio() {
   ];
 
   const experience = [
+    {
+      company: t.experience.exp3.company,
+      role: t.experience.exp3.role,
+      period: t.experience.exp3.period,
+      description: t.experience.exp3.description
+    },
     {
       company: t.experience.exp1.company,
       role: t.experience.exp1.role,
