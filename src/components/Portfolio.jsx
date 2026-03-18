@@ -83,7 +83,7 @@ export default function Portfolio() {
         },
         exp3: {
           company: 'Interprest-sn',
-          role: 'Stagiaire',
+          role: 'Stagiaire Admin Système',
           period: 'Février - Avril 2026',
           description: 'Administration de serveurs, participation à l\'installation de réseaux et maintenance de logiciels d\'archivage.'
         }
@@ -165,7 +165,7 @@ export default function Portfolio() {
         },
         exp3: {
           company: 'Interprest-sn',
-          role: 'Intern',
+          role: 'System Admin Intern',
           period: 'February - April 2026',
           description: 'Server administration, participation in network installation, and maintenance of archiving software.'
         }
