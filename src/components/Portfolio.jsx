@@ -64,6 +64,10 @@ export default function Portfolio() {
         projectZeroTrust: {
           title: 'Architecture Zero Trust & Micro-segmentation',
           description: 'Mise en œuvre d\'une architecture réseau sécurisée de type Zero Trust, déployée dans un environnement virtualisé.\n L\'objectif est de sécuriser un SI contre les mouvements latéraux via le paradigme "Never Trust, Always Verify".\n Architecture basée sur une micro-segmentation stricte (VLANs dédiés) et un filtrage par pare-feu central.\n Technologies : pfSense, Wazuh, FreeIPA, PostgreSQL, GNS3.'
+        },
+        projectIHM: {
+          title: 'SecureLoginApp — Connexion sécurisée par reconnaissance vocale',
+          description: 'Application de bureau JavaFX permettant une authentification sécurisée par reconnaissance vocale via la bibliothèque VOSK.\n Trois modes d\'authentification : mot de passe, voix uniquement, ou double authentification (mot de passe + voix).\n Technologies : Java 21, JavaFX, Java Sound API, VOSK, Maven.'
         }
       },
       experience: {
@@ -146,6 +150,10 @@ export default function Portfolio() {
         projectZeroTrust: {
           title: 'Zero Trust Architecture & Micro-segmentation',
           description: 'Implementation of a secure Zero Trust network architecture deployed in a virtualized environment.\n The goal is to secure an IS against lateral movement using the "Never Trust, Always Verify" paradigm.\n Architecture based on strict micro-segmentation (dedicated VLANs) and central firewall filtering.\n Technologies: pfSense, Wazuh, FreeIPA, PostgreSQL, GNS3.'
+        },
+        projectIHM: {
+          title: 'SecureLoginApp — Secure Login via Voice Recognition',
+          description: 'JavaFX desktop application enabling secure authentication through voice recognition using the VOSK library.\n Three authentication modes: password only, voice only, or dual authentication (password + voice).\n Technologies: Java 21, JavaFX, Java Sound API, VOSK, Maven.'
         }
       },
       experience: {
@@ -207,6 +215,12 @@ export default function Portfolio() {
       description: t.projects.project4.description,
       path: "/typing-game",
       isInternal: true
+    },
+    {
+      title: t.projects.projectIHM.title,
+      description: t.projects.projectIHM.description,
+      demo: "https://github.com/azizkane01/IHM-vocal.git",
+      isInternal: false
     }
   ];
 
