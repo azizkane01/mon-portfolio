@@ -47,7 +47,7 @@ export default function Portfolio() {
       projects: {
         title: 'Projets',
         viewProject: 'Voir la démo',
-        viewDemo: 'Voir le code',
+        viewDemo: 'Voir le projet',
         moreOnGithub: "Et bien d'autres disponibles sur mon GitHub",
         project1: {
           title: 'Création et Administration d\'un réseau et de ces services',
@@ -137,7 +137,7 @@ export default function Portfolio() {
       projects: {
         title: 'Projects',
         viewProject: 'View demo',
-        viewDemo: 'View code',
+        viewDemo: 'View project',
         moreOnGithub: "And many more available on my GitHub",
         project1: {
           title: 'Network Creation and Administration with its Services',
