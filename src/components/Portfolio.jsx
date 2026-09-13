@@ -5,7 +5,7 @@ import { Github, Linkedin, Mail, ExternalLink, Code2, Briefcase, GraduationCap, 
 export default function Portfolio() {
   const navigate = useNavigate();
   const [activeSection, setActiveSection] = useState('about');
-  const [language, setLanguage] = useState('en');
+  const [language, setLanguage] = useState('fr');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const translations = {
@@ -16,8 +16,8 @@ export default function Portfolio() {
         experience: 'Expérience'
       },
       hero: {
-        role: 'Étudiant en Informatique',
-        description: 'Etudiant en ingénierie Informatique @ Polytech Diamniadio | Administrateur Réseau et Full Stack Dev , passionné par l\'Intelligence Artificielle, la cybersécurité et l\'IoT'
+        role: 'Étudiant en Cybersécurité',
+        description: 'Étudiant en Master Cybersécurité des Systèmes Embarqués @ Université Bretagne Sud | Passionné par la sécurité des infrastructures, les systèmes embarqués (IoT) et l\'Intelligence Artificielle.'
       },
       about: {
         title: 'À propos',
@@ -34,17 +34,21 @@ export default function Portfolio() {
       },
       education: {
         title: 'Formation',
-        degree1: 'Diplôme d\'ingénieur Informatique',
+        degree0: 'Master Cybersécurité des Systèmes Embarqués',
+        school0: 'Université Bretagne Sud',
+        period0: '2026-en cours',
+        degree1: 'Licence Ingénierie Informatique, Mention Très Bien',
         school1: 'École Supérieure Polytech Diamniadio',
-        period1: '2023-en cours',
+        period1: '2023-2026',
         degree2: 'Baccalauréat Scientifique',
         school2: 'Lycée Yeumbeul',
         period2: '2022-2023'
       },
       projects: {
         title: 'Projets',
-        viewProject: 'Voir le projet',
-        viewDemo: 'Voir le projet',
+        viewProject: 'Voir la démo',
+        viewDemo: 'Voir le code',
+        moreOnGithub: "Et bien d'autres disponibles sur mon GitHub",
         project1: {
           title: 'Création et Administration d\'un réseau et de ces services',
           description: 'Projet de configuration compléte d\'un réseau sécurisé pour l\'entreprise fictive SMARTTECH,comprenant DMZ,LAN,VPN,ToIP,authentification Wi-Fi via FreeRADIUS et FreeIPA.\n Mise en oeuvre dans GNS3 sous VMware(Ubuntu) avec conteneurs Docker:VPN IPsec,firewall nftables,logs auditd,authentification Kerberos/LDAP.'
@@ -102,8 +106,8 @@ export default function Portfolio() {
         experience: 'Experience'
       },
       hero: {
-        role: 'Computer Science Student',
-        description: 'Computer Engineering student @ Polytech Diamniadio | Network Administrator and Full Stack Dev, passionate about Artificial Intelligence, cybersecurity and IoT'
+        role: 'Cybersecurity Student',
+        description: 'Master\'s student in Embedded Systems Cybersecurity @ Université Bretagne Sud | Passionate about infrastructure security, Embedded Systems (IoT), and Artificial Intelligence.'
       },
       about: {
         title: 'About',
@@ -120,17 +124,21 @@ export default function Portfolio() {
       },
       education: {
         title: 'Education',
-        degree1: 'Computer Engineering Degree',
+        degree0: 'Master in Embedded Systems Cybersecurity',
+        school0: 'Université Bretagne Sud',
+        period0: '2026-present',
+        degree1: 'Bachelor in Computer Engineering, Highest Honors',
         school1: 'École Supérieure Polytech Diamniadio',
-        period1: '2023-present',
+        period1: '2023-2026',
         degree2: 'Scientific Baccalaureate',
         school2: 'Lycée Yeumbeul',
         period2: '2022-2023'
       },
       projects: {
         title: 'Projects',
-        viewProject: 'View project',
-        viewDemo: 'View project',
+        viewProject: 'View demo',
+        viewDemo: 'View code',
+        moreOnGithub: "And many more available on my GitHub",
         project1: {
           title: 'Network Creation and Administration with its Services',
           description: 'Complete configuration project of a secure network for the fictional company SMARTTECH, including DMZ, LAN, VPN, VoIP, Wi-Fi authentication via FreeRADIUS and FreeIPA.\n Implementation in GNS3 under VMware(Ubuntu) with Docker containers: IPsec VPN, nftables firewall, auditd logs, Kerberos/LDAP authentication.'
@@ -247,6 +255,11 @@ export default function Portfolio() {
 
   const education = [
     {
+      school: t.education.school0,
+      degree: t.education.degree0,
+      period: t.education.period0
+    },
+    {
       school: t.education.school1,
       degree: t.education.degree1,
       period: t.education.period1
@@ -261,7 +274,7 @@ export default function Portfolio() {
   const skills = {
     [t.skills.languages]: ["Python", "C", "Java", "JavaScript", "PHP", "Scala"],
     [t.skills.web]: ["React", "HTML/CSS", "Node.js"],
-    [t.skills.tools]: ["Git/GitHub", "VMware", "Docker", "Nmap", "Burp Suite", "wireshark", "Arduino IDE", "etc"],
+    [t.skills.tools]: ["Git/GitHub", "VMware", "Docker", "Nmap", "Burp Suite", "wireshark", "Arduino IDE", "Vivado", "etc"],
     [t.skills.spokenLanguages]: t.spokenLangs
   };
 
@@ -458,6 +471,18 @@ export default function Portfolio() {
                   )}
                 </div>
               ))}
+            </div>
+            
+            <div className="mt-12 text-center">
+              <a 
+                href="https://github.com/azizkane01" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-lg text-gray-300 hover:text-blue-400 transition-colors bg-slate-800/50 backdrop-blur-sm px-6 py-3 rounded-full border border-blue-500/20 hover:border-blue-400/40"
+              >
+                <Github className="w-5 h-5" />
+                {t.projects.moreOnGithub}
+              </a>
             </div>
           </div>
         )}
