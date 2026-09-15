@@ -48,6 +48,7 @@ export default function Portfolio() {
         title: 'Projets',
         viewProject: 'Voir la démo',
         viewDemo: 'Voir le projet',
+        inProgress: 'En cours',
         moreOnGithub: "Et bien d'autres disponibles sur mon GitHub",
         project1: {
           title: 'Création et Administration d\'un réseau et de ces services',
@@ -72,6 +73,10 @@ export default function Portfolio() {
         projectIHM: {
           title: 'SecureLoginApp — Connexion sécurisée par reconnaissance vocale',
           description: 'Application de bureau JavaFX permettant une authentification sécurisée par reconnaissance vocale via la bibliothèque VOSK.\n Trois modes d\'authentification : mot de passe, voix uniquement, ou double authentification (mot de passe + voix).\n Technologies : Java 21, JavaFX, Java Sound API, VOSK, Maven.'
+        },
+        projectVHDL: {
+          title: 'Microprocesseur 16 bits (VHDL)',
+          description: 'Conception et implémentation d\'un microprocesseur simple 16 bits en utilisant VHDL et Vivado.\n Ce projet est actuellement en cours de développement.'
         }
       },
       experience: {
@@ -138,6 +143,7 @@ export default function Portfolio() {
         title: 'Projects',
         viewProject: 'View demo',
         viewDemo: 'View project',
+        inProgress: 'In progress',
         moreOnGithub: "And many more available on my GitHub",
         project1: {
           title: 'Network Creation and Administration with its Services',
@@ -162,6 +168,10 @@ export default function Portfolio() {
         projectIHM: {
           title: 'SecureLoginApp — Secure Login via Voice Recognition',
           description: 'JavaFX desktop application enabling secure authentication through voice recognition using the VOSK library.\n Three authentication modes: password only, voice only, or dual authentication (password + voice).\n Technologies: Java 21, JavaFX, Java Sound API, VOSK, Maven.'
+        },
+        projectVHDL: {
+          title: '16-bit Microprocessor (VHDL)',
+          description: 'Design and implementation of a simple 16-bit microprocessor using VHDL and Vivado.\n This project is currently under development.'
         }
       },
       experience: {
@@ -194,6 +204,12 @@ export default function Portfolio() {
   const t = translations[language];
 
   const projects = [
+    {
+      title: t.projects.projectVHDL.title,
+      description: t.projects.projectVHDL.description,
+      isInProgress: true,
+      isInternal: false
+    },
     {
       title: t.projects.project1.title,
       description: t.projects.project1.description,
@@ -456,7 +472,11 @@ export default function Portfolio() {
                   <h4 className="text-2xl font-bold mb-3">{project.title}</h4>
                   <p style={{ whiteSpace: "pre-line" }} className="text-gray-300 mb-4">{project.description}</p>
 
-                  {project.isInternal ? (
+                  {project.isInProgress ? (
+                    <span className="inline-flex items-center gap-2 text-yellow-400 bg-yellow-400/10 px-4 py-2 rounded-full text-sm font-semibold border border-yellow-400/20">
+                      {t.projects.inProgress}
+                    </span>
+                  ) : project.isInternal ? (
                     <button
                       onClick={() => navigate(project.path)}
                       className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors bg-transparent border-none cursor-pointer text-base"
