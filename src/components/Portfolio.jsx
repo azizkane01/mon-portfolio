@@ -68,7 +68,7 @@ export default function Portfolio() {
         },
         projectZeroTrust: {
           title: 'Architecture Zero Trust & Micro-segmentation',
-          description: 'Mise en œuvre d\'une architecture réseau sécurisée de type Zero Trust, déployée dans un environnement virtualisé.\n L\'objectif est de sécuriser un SI contre les mouvements latéraux via le paradigme "Never Trust, Always Verify".\n Architecture basée sur une micro-segmentation stricte (VLANs dédiés) et un filtrage par pare-feu central.\n Technologies : pfSense, Wazuh, FreeIPA, PostgreSQL, GNS3.'
+          description: 'Mise en œuvre d\'une architecture réseau sécurisée de type Zero Trust, déployée dans un environnement virtualisé.\n L\'objectif est de sécuriser un SI contre les mouvements latéraux via le paradigme "Never Trust, Always Verify".\n Architecture basée sur une micro-segmentation stricte (VLANs dédiés) et un filtrage par pare-feu central, avec une supervision de la sécurité assurée par le SIEM Wazuh.\n Technologies : pfSense, Wazuh, FreeIPA, PostgreSQL, GNS3.'
         },
         projectIHM: {
           title: 'SecureLoginApp — Connexion sécurisée par reconnaissance vocale',
@@ -163,7 +163,7 @@ export default function Portfolio() {
         },
         projectZeroTrust: {
           title: 'Zero Trust Architecture & Micro-segmentation',
-          description: 'Implementation of a secure Zero Trust network architecture deployed in a virtualized environment.\n The goal is to secure an IS against lateral movement using the "Never Trust, Always Verify" paradigm.\n Architecture based on strict micro-segmentation (dedicated VLANs) and central firewall filtering.\n Technologies: pfSense, Wazuh, FreeIPA, PostgreSQL, GNS3.'
+          description: 'Implementation of a secure Zero Trust network architecture deployed in a virtualized environment.\n The goal is to secure an IS against lateral movement using the "Never Trust, Always Verify" paradigm.\n Architecture based on strict micro-segmentation (dedicated VLANs) and central firewall filtering, with security monitoring provided by the Wazuh SIEM.\n Technologies: pfSense, Wazuh, FreeIPA, PostgreSQL, GNS3.'
         },
         projectIHM: {
           title: 'SecureLoginApp — Secure Login via Voice Recognition',
@@ -211,9 +211,9 @@ export default function Portfolio() {
       isInternal: false
     },
     {
-      title: t.projects.project1.title,
-      description: t.projects.project1.description,
-      demo: "https://github.com/azizkane01/Configuration-d-un-resau",
+      title: t.projects.projectZeroTrust.title,
+      description: t.projects.projectZeroTrust.description,
+      demo: "https://github.com/azizkane01/architecture-zero-trust",
       isInternal: false
     },
     {
@@ -229,9 +229,9 @@ export default function Portfolio() {
       isInternal: true
     },
     {
-      title: t.projects.projectZeroTrust.title,
-      description: t.projects.projectZeroTrust.description,
-      demo: "https://github.com/azizkane01/architecture-zero-trust",
+      title: t.projects.project1.title,
+      description: t.projects.project1.description,
+      demo: "https://github.com/azizkane01/Configuration-d-un-resau",
       isInternal: false
     },
     {
